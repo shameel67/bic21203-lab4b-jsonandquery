@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery DOM Operations</title>
+
+    <style>
+        .myStyle {
+            background-color: coral;
+            padding: 16px;
+        }
+    </style>
+
+    <!-- jQuery 4.0.0 full build -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+</head>
+<body>
+
+    <h1>jQuery DOM Operations</h1>
+
+    <div id="myElement">Original Text</div>
+
+    <div id="myDIV">
+        <p>I am a myDIV.</p>
+    </div>
+
+    <button id="myButton">Click me</button>
+
+    <script>
+
+        // (a) Change the text
+        $("#myElement").text("Modified Text");
+
+        // (b) Add CSS class
+        $("#myDIV").addClass("myStyle");
+
+        // (c) Handle button click event
+        $("#myButton").on("click", function() {
+            alert("Button clicked!");
+        });
+
+    </script>
+
+</body>
+</html>
